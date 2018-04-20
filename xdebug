@@ -2,9 +2,9 @@
 
 if [ $# -eq 0 ] || [ "--help" == "$1" ] || [ "-h" == "$1" ]
 then
-    default=$(echo -e "\\e[0m")
-    title=$(echo -e "\\e[33m")
-    info=$(echo -e "\\e[32m")
+    default=$(echo -e "\\033[0m")
+    title=$(echo -e "\\033[33m")
+    info=$(echo -e "\\033[32m")
 
     cat <<USAGE
 ${title}Usage:${default}
